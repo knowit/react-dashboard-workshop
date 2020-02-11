@@ -1,38 +1,100 @@
-.App {
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+}
+
+.header {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dashboardRow {
+  padding: 1.25rem;
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.widget {
+  padding: 1.25rem;
+  background: #F8DFF2;
+  border-radius: 0.3125rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.widget {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1.25rem;
+  border-radius: 0.3125rem;
 }
 
-.App-link {
-  color: #61dafb;
+.widget:not(:last-child) {
+  margin-right: 1.25rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.widget:nth-child(3n+1) {
+  background: #F8DFF2;
+}
+
+.widget:nth-child(3n+2) {
+  background: #EEE3FF;
+}
+
+.widget:nth-child(3n+3) {
+  background: #CBBBE2;
+}
+
+.widget ul {
+  padding: 0;
+  list-style: none;
+}
+
+.widget li:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+
+.tabs button {
+  padding: 0.3125rem 0.625rem;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+}
+
+.tabs button.activeTab {
+  background: #CBBBE2;
+}
+
+.approvedAssignment {
+  text-decoration: line-through;
+}
+
+img {
+  max-width: 100%;
+}
+
+.yesOrNoForm {
+  margin-top: 1.25rem;
+  width: 100%;
+  text-align: center;
+}
+
+.yesOrNoForm label {
+  display: block;
+  margin-bottom: 0.625rem;
+}
+
+.yesOrNoForm input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.1875rem;
+  font-size: 1rem;
+  outline: none;
 }

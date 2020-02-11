@@ -30,10 +30,24 @@ const YesNo = () => {
 
   return (
     <Widget title={lastAskedQuestion}>
-      {imageUrl && <img alt={'yes or no gif'} src={imageUrl} />}
-      <form onSubmit={askQuestion}>
-        Still nytt spørsmål:
-        <input value={question} onChange={updateQuestion}></input>
+      {
+        imageUrl &&
+        <img alt={'yes or no gif'} src={imageUrl} />
+      }
+      <form
+        className="yesOrNoForm"
+        onSubmit={askQuestion}
+      >
+        <label
+          htmlFor="yesOrNoQuestionInput"
+        >
+          Still nytt spørsmål:
+        </label>
+        <input
+          id="yesOrNoQuestionInput"
+          value={question}
+          onChange={updateQuestion}
+        />
       </form>
     </Widget>
   );

@@ -13,11 +13,12 @@ const Assignments = () => {
 
   return (
     <Widget title="Mine øvinger">
-      <div>
+      <div className="tabs">
         {
           subjects.map((subject: any, index: number) => (
             <button
               key={index}
+              className={index === activeTab ? 'activeTab' : ''}
               onClick={() => updateActiveTab(index)}
             >
               {subject.name}
@@ -28,7 +29,12 @@ const Assignments = () => {
       <ul>
         {
           subjects[activeTab].assignments.map((assignment: any, index: number) => (
-            <li key={index}>{assignment.name}</li>
+            <li
+              key={index}
+              className={assignment.approved ? 'approvedAssignment' : ''}
+            >
+              {assignment.name}
+            </li>
           ))
         }
       </ul>

@@ -6,11 +6,15 @@ import YesNo from './Components/YesNo';
 
 const App = () => {
   return (
-    <div className="App">
-      <h1>Josefines dashboard</h1>
-      <Lectures />
-      <Assignments />
-      <YesNo />
+    <div>
+      <h1 className="header">
+        Josefines dashboard
+      </h1>
+      <div className="dashboardRow">
+        <Lectures />
+        <Assignments />
+        <YesNo />
+      </div>
     </div>
   );
 }

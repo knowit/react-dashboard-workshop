@@ -11,6 +11,13 @@ const Assignments = () => {
     setActiveTab(index);
   };
 
+  const isSubjectApproved = () => {
+    const { assignments, mandatoryApprovals } = subjects[activeTab];
+    const approvedAssignments = assignments.filter((assignment: any) => assignment.approved);
+
+    return approvedAssignments.length >= mandatoryApprovals;
+  };
+
   return (
     <Widget title="Mine øvinger">
       <div className="tabs">
@@ -24,6 +31,11 @@ const Assignments = () => {
               {subject.name}
             </button>
           ))
+        }
+      </div>
+      <div className="subjectStatus">
+        {
+          isSubjectApproved() ? 'Du er ferdig!' : 'Du er ikke helt i mål enda...'
         }
       </div>
       <ul>

@@ -57,6 +57,10 @@ body {
   margin-bottom: 0.625rem;
 }
 
+.tabs {
+  margin-bottom: 1.25rem;
+}
+
 .tabs button {
   padding: 0.3125rem 0.625rem;
   border: none;
@@ -68,6 +72,10 @@ body {
 
 .tabs button.activeTab {
   background: #CBBBE2;
+}
+
+.subjectStatus {
+  font-weight: 700;
 }
 
 .approvedAssignment {

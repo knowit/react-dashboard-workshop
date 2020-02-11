@@ -5,12 +5,14 @@ export interface Assignment {
 
 export interface Subject {
   name: string;
+  mandatoryApprovals: number;
   assignments: Assignment[];
 }
 
 export const subjects: any = [
   {
     name: 'AI',
+    mandatoryApprovals: 1,
     assignments: [
       {
         name: 'AI Øving 1',
@@ -18,12 +20,13 @@ export const subjects: any = [
       },
       {
         name: 'AI Øving 2',
-        approved: false,
+        approved: true,
       },
     ]
   },
   {
     name: 'ITGK',
+    mandatoryApprovals: 2,
     assignments: [
       {
         name: 'ITGK Øving 1',

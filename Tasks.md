@@ -1,12 +1,12 @@
 # Oppgaver
 
-Start appen med yarn start.
+Start appen med `yarn start`.
 
-Nedenfor ligger en beskrivelse av alle oppgavene vi skal gjennom for å lage vårt private dashboard. Oppgavene er delt opp i forskjellig nivå. Målet er at alle, med hjelp, skal klare å løse nivå 1-oppgavene. I tillegg er det en del oppgaver med høyere nivå, begi deg ut på de om du får tid.
+Nedenfor ligger en beskrivelse av alle oppgavene vi skal gjennom for å lage vårt private dashboard. Hver oppgave er delt opp i flere deloppgaver. Målet er at alle, med hjelp, skal klare å løse den første deloppgaven for hver oppgave. I tillegg er det en noen deloppgaver med høyere nivå, begi deg ut på de om du får tid.
 
-En enkel måte å debugge appen din på er ved bruk av console.log for å printe ut hvilken data man har tilgjengelig. (https://developer.mozilla.org/en-US/docs/Web/API/Console).
+En enkel måte å debugge appen din på er ved bruk av `console.log` for å printe ut hvilken data man har tilgjengelig. (https://developer.mozilla.org/en-US/docs/Web/API/Console).
 
-Hvis du står fast så er det viktig at du spør om hjelp! Noen gang trenger man å diskutere med andre for å finne løsningen, og noen gang trenger man en dytt i riktig retning. Vi er her for å hjelpe.
+Om du står fast er det viktig at du spør om hjelp. Noen gang trenger man å diskutere med andre eller få et dytt i riktig retning for å finne løsningen. Vi er her for å hjelpe!
 
 ## Fellesoppgave
 
@@ -33,7 +33,7 @@ TODO:
 - HINT OM CONSOLE.LOG FOR Å SE AT DEN BLIR RIKTIG?
 - HINT OM HVORDAN MAN VISER JS I JSX?
 
-### Nivå 1.3
+### 1.3
 I stedet for å bruke for så kan man bruke noe som heter map. Les mer om dette her: (Link). (Vi skal gå gjennom map på et senere tidspunkt i workshopen, så fortvil ikke om dette var vanskelig.) IKKE GÅ GJENNOM MAP HER, MEN LA FOLK UTFORSKE SELV?
 
 ## Oppgave 2

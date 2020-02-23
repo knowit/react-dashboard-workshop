@@ -41,13 +41,19 @@ GÅ GJENNOM GJENBRUK AV KOMPONENTER, OG CHILDREN.
 Åpne `Widget.tsx`, og sammenlign den med Lectures-komponenten vi nettopp var i. Du ser kanskje at de er ganske like?
 
 ### 2.1
-I Lectures.jsx, fjern de taggene som er like i filene og erstatt med <Widget>. HINT? DET ER GJORT I ASSIGNMENT.TSX?.
+I `Lectures.jsx`, fjern de taggene som er like i filene og erstatt med `<Widget>`.
+
+HINT? DET ER GJORT I `ASSIGNMENT.TSX`.
 
 ### 2.2
-Nå får du kanskje opp at ingen tittel er definert? Prøv å send med en title-prop til Widget, å se hva som skjer. URL TIL HVORDAN SENDE PROPS?
+Nå får du kanskje opp at ingen tittel er definert?
+
+Prøv å send med en `title`-prop til `Widget`, å se hva som skjer.
+
+https://reactjs.org/docs/components-and-props.html#composing-components
 
 ### 2.3
-Etterhvert kan man ha veldig mange props som sendes inn i en komponent. Et triks for å gjøre koden mer lesbar er å dekonstruere props. Les hvordan her (URL) og prøv å dekonstruer propsene til Widget.
+Etterhvert kan man ha veldig mange props som sendes inn til et komponent. Et triks for å gjøre koden mer lesbar er å dekonstruere props. Les hvordan her [unpacking fields from objects passed as function parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Unpacking_fields_from_objects_passed_as_function_parameter) og prøv å dekonstruer propsene til `Widget`.
 
 ## Oppgave 3
 
@@ -81,8 +87,6 @@ Map over øvingene til det første faget og fyll ut lista.
 **Hint:** Ligner veldig på oppgave 1.3 og forrige oppgave. Legg på `key={index}` som en prop på listeelementet.
 
 ## Oppgave 5
-GÅ GJENNOM STATE
-
 ### 5.1
 Kommenter inn state-hooken i toppen av Assignments-komponenten.
 
@@ -96,7 +100,7 @@ HINT: Fyll inn updateActiveTab-metoden
 HINT: Hvordan kalle metoden når man klikker?
 
 ### 5.3
-Nå er det vanskelig å se hvilken tab som er aktiv. Legg til en klasse `activeTab` på `<button>`-elementet om indeksen er lik som `activeTab`-staten slik at det blir lettere å se.
+Nå er det vanskelig å se hvilken tab som er aktiv. Legg til en klasse `activeTab` på `<button>`-elementet om indeksen til taben er lik som `activeTab`-staten slik at det blir lettere å se.
 
 ### 5.3
 Nå vises lista med oppgaver til det første faget hele tiden. Bruk `activeTab`-staten til å vise riktig fag. Ser du at listen over øvinger endrer seg når du endrer fag?
@@ -123,6 +127,10 @@ Noe med å submitte formet
 Fetche data fra api og oppdatere `imageUrl`-staten, `lastAskedQuestion` og resette `question`.
 
 ### 6.5
-Rendre bildet?
+Legg inn et default spørsmål og hent et svar når komponenten rendres første gangen ved hjelp av `useEffect`.
 
-BURDE VI HA MED USEEFFECT NOE STED? Hvis vi får tid, evt ha som ekstraoppgave. Last inn ved refresh
+## Ekstraoppgaver
+### Lag en ny widget helt fra bunnen av
+Her finner du en liste over åpne APIer. Kan du bruke et av dem til å lage en ny widget til dashboardet ditt?
+
+LISTE OVER APIER

@@ -18,23 +18,11 @@ Om du står fast er det viktig at du spør om hjelp. Noen gang trenger man å di
 
 I første oppgave skal vi lage en liste over alle forelesningene man har.
 
-TODO:
-- SLIDES OM JSX/HTML.
-- GI CHEATSHEET OM HTML?
-
 ### 1.1
 Åpne ` Lectures.jsx` og fyll ut lista med dine forelesninger i JSX. Ser du at det dukker opp i appen?
 
 ### 1.2
 Lista ble fort veldig lang. Flytt informasjonen ut i ei liste av strings og iterer over den for å lage ei ny liste med <li>-elementer, og vis frem denne.
-
-TODO:
-- Legg til map funksjonen i cheatsheet
-- HINT OM CONSOLE.LOG FOR Å SE AT DEN BLIR RIKTIG?
-- HINT OM HVORDAN MAN VISER JS I JSX?
-
-### 1.3
-I stedet for å bruke for så kan man bruke noe som heter map. Les mer om dette her: (Link). (Vi skal gå gjennom map på et senere tidspunkt i workshopen, så fortvil ikke om dette var vanskelig.) IKKE GÅ GJENNOM MAP HER, MEN LA FOLK UTFORSKE SELV?
 
 ## Oppgave 2: Komponenter og props
 https://reactjs.org/docs/components-and-props.html
@@ -72,13 +60,15 @@ Etterhvert kan man ha veldig mange props som sendes inn til et komponent. Et tri
 
 **Intro til TypeScript**
 
-Enn så lenger har vi jobbet med jsx. Nå skal vi prøve å gjøre om til å bruke typescript. Denne linken kan være nyttig underveis: URL TIL RELEVANT KILDE.
+Enn så lenger har vi jobbet med jsx. Nå skal vi prøve å gjøre om til å bruke typescript. [Denne linken kan være nyttig underveis, og introduserer noen vanlige typer](https://www.typescriptlang.org/docs/handbook/basic-types.html)
 
 ### 3.1
 Vi starter med `Widget.jsx`. Prøv å endre filnavnet til `Widget.tsx`. Hvilke feilmeldinger får du? Rett opp i disse ved å definere typene.
 
+Hint 1: Du må definere typen på selve komponenten for å definere typen somm props skal ha.
+
 ### 3.2
-Fortsett med å endre `Lectures.jsx` til å bruke TypeScript.
+Fortsett med å endre `Lectures.jsx` til å bruke TypeScript. Om dere holder over arrayet ser dere kanskje at typen infereres? Prøv å legg til et tall i lista å se hva typen er nå. Prøv så å sette typen på lista, og se om det kommer noen feilmeldinger. Prøv også å legge ved type i selve map-funksjonen.
 
 ## Oppgave 4: Iterere over en liste
 I denne oppgaven skal vi iterere over en liste og legge til et listepunkt for

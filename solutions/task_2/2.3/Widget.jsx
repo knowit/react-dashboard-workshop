@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Widget = (props) => (
+const Widget = ({ title, children }) => (
   <div className="widget">
-    <h2>{props.title}</h2>
-    {props.children}
+    <h2>{title}</h2>
+    {children}
   </div>
 );
 

@@ -1,14 +1,15 @@
 import React from 'react';
 
+import Widget from '../Components/Widget';
+
 const Lectures = () => (
-  <div className="widget">
-    <h2>Mine forelesninger</h2>
+  <Widget>
     <ul>
       <li>08:00-09:00 It Grunnkurs</li>
       <li>08:00-09:00 It Grunnkurs</li>
       <li>08:00-09:00 It Grunnkurs</li>
     </ul>
-  </div>
+  </Widget>
 );
 
 export default Lectures;

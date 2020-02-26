@@ -36,11 +36,24 @@ TODO:
 ### 1.3
 I stedet for å bruke for så kan man bruke noe som heter map. Les mer om dette her: (Link). (Vi skal gå gjennom map på et senere tidspunkt i workshopen, så fortvil ikke om dette var vanskelig.) IKKE GÅ GJENNOM MAP HER, MEN LA FOLK UTFORSKE SELV?
 
-## Oppgave 2
-GÅ GJENNOM GJENBRUK AV KOMPONENTER, OG CHILDREN.
-Åpne `Widget.tsx`, og sammenlign den med Lectures-komponenten vi nettopp var i. Du ser kanskje at de er ganske like?
+## Oppgave 2: Komponenter og props
+https://reactjs.org/docs/components-and-props.html
+
+**Komponenter**
+
+React gjør det enkelt å gjenbruke funksjonalitet og markup vi trenger å bruke flere steder, slik at vi slipper å skrive samme koden flere ganger. I React-verdenen kalles en slik samling for et komponent. Komponenter kan sees på som en byggekloss i applikasjonen din. `Lectures` som du så i oppgave 1 er et eksempel på et slikt React-komponent. Det er en funksjon som returnerer et React element som beskriver hvordan en del av brukergrensesnittet skal se ut og oppføre seg.
+
+**Props**
+
+Props (properties) er attributter som kan sendes med til et React-komponent. Det kan sees på som å sende med argumenter til en funksjon.
+
+**Children**
+
+Children er et slags spesialprop. Alt som er definert mellom åpne og lukketaggen til et React-komponent vil være tilgjengelige i komponentet via `props.children`.
 
 ### 2.1
+Åpne `Widget.tsx`, og sammenlign den med Lectures-komponenten vi nettopp var i. Du ser kanskje at de er ganske like?
+
 I `Lectures.jsx`, fjern de taggene som er like i filene og erstatt med `<Widget>`.
 
 HINT? DET ER GJORT I `ASSIGNMENT.TSX`.

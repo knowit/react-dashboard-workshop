@@ -80,24 +80,28 @@ Vi starter med `Widget.jsx`. Prøv å endre filnavnet til `Widget.tsx`. Hvilke f
 ### 3.2
 Fortsett med å endre `Lectures.jsx` til å bruke TypeScript.
 
-## Oppgave 4
-GÅ GJENNOM MAP - HVORFOR KEYS
-Nå skal vi lage en ny komponent/Widget til dashboardet vårt, `Assignments.tsx`.
+## Oppgave 4: Iterere over en liste
+I denne oppgaven skal vi iterere over en liste og legge til et listepunkt for
+hvert element i listen. I React bruker vi en metode som heter `map` for å iterere over en liste med verdier. Hvordan du bruker `map` kan du se her: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+
+Du finner også et eksempel på hvordan du rendrer listepunkter i `CHEATSHEET.md`.
+
+Når du bruker `map` for å rendre UI elementer er det viktig at du legger til en
+attributt `key` på elementet som rendres. `Key` er en attributt som brukes av React til å avgjøre hvilke listeelementer som har blitt endret, lagt til eller
+fjernet. Du kan lese mer om keys her: https://reactjs.org/docs/lists-and-keys.html#keys
 
 ### 4.1
-Legg til widgeten i dashboardet ditt.
+Nå skal vi lage en ny komponent/Widget til dashboardet vårt, `Assignments.tsx`.
 
-**HINT:** Gjøres i `App.tsx`.
+**Hint:** Gjøres i `App.tsx`.
 
 ### 4.2
-MÅ MAN LEGGE TIL FAG OG ASSIGNMENTS FØRST KANSKJE?
-
-Map over fagene og lag et `<button>` for hvert fag.
+Bruk `map` metoden for iterere over listen med fag og print ut en `<button>` for hvert fag.
 
 ### 4.3
 Map over øvingene til det første faget og fyll ut lista.
 
-**Hint:** Ligner veldig på oppgave 1.3 og forrige oppgave. Legg på `key={index}` som en prop på listeelementet.
+**Hint:** Ligner veldig på oppgave 1.3 og forrige oppgave. Legg på `key={index}` som en prop på listeelementene.
 
 ## Oppgave 5
 ### 5.1

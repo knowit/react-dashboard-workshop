@@ -34,3 +34,21 @@ const MyComponent = ({ text, children }) => (
 );
 ```
 
+# Oppgave 4
+
+## Map over listepunkter
+```javascript
+  const list = [
+    'item 1',
+    'item 2',
+    'item 3'
+  ];
+
+  <ul>
+    {
+      list.map((item, index) =>
+        <li key={index}>{item}</li>
+      )
+    }
+  </ul>
+```

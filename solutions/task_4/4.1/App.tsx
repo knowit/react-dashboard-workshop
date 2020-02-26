@@ -1,7 +1,8 @@
 import React from 'react';
+
 import './App.css';
 import Lectures from './Components/Lectures';
-// import Assignments from './Components/Assignments';
+import Assignments from './Components/Assignments';
 
 const App = () => (
   <div>
@@ -10,7 +11,7 @@ const App = () => (
     </h1>
     <div className="dashboardRow">
       <Lectures />
-      {/* <Assignments /> */}
+      <Assignments />
     </div>
   </div>
 );

@@ -20,7 +20,13 @@ const Assignments = () => {
   return (
     <Widget title="Mine øvinger">
       <div className="tabs">
-        {/* Oppgave 4.2: Map over subjekts og print ut en knapp for hvert fag */}
+        {
+          subjects.map((subject: any, index: number) => (
+            <button key={index}>
+              {subject.name}
+            </button>
+          ))
+        }
       </div>
       <div className="subjectStatus">
         {/* {

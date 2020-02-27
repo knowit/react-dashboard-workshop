@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css';
 import Lectures from './Components/Lectures';
-import Assignments from './Components/Assignments';
-import YesNo from './Components/YesNo';
+// import Assignments from './Components/Assignments';
 
 const App = () => {
   const name = 'Tale';
@@ -14,8 +13,7 @@ const App = () => {
       </h1>
       <div className="dashboardRow">
         <Lectures />
-        <Assignments />
-        <YesNo />
+        {/* <Assignments /> */}
       </div>
     </div>
   );

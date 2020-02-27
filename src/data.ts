@@ -9,7 +9,7 @@ export interface Subject {
   assignments: Assignment[];
 }
 
-export const subjects: any = [
+export const subjects: Subject[] = [
   {
     name: 'AI',
     mandatoryApprovals: 1,

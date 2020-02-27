@@ -1,19 +1,17 @@
 import React from 'react';
 import './App.css';
 import Lectures from './Components/Lectures';
-// import Assignments from './Components/Assignments';
+import Assignments from './Components/Assignments';
 
 const App = () => {
-  const name = 'Tale';
-
   return (
     <div>
       <h1 className="header">
-        {name}s dashboard
+        Josefines dashboard
       </h1>
       <div className="dashboardRow">
         <Lectures />
-        {/* <Assignments /> */}
+        <Assignments />
       </div>
     </div>
   );

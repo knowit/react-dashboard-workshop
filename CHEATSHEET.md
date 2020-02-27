@@ -102,6 +102,18 @@ number - tall
   </ul>
 ```
 
+# Oppgave 5
+
+## Filter
+Man kan bruke filter for å få filtrert en liste.
+```javascript
+const array = [1, 2, 3, 4];
+const higherThan2 = array.filter(number => number > 2);
+// Her er listen filtrert slik at man kun beholder verdier over 2, og man ender opp med følgende liste:
+// higherThan2 = [3,4]
+```
+
+
 # Oppgave 6
 
 ## Fetch

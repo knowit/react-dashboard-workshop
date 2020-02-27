@@ -70,6 +70,8 @@ Hint 1: Du må definere typen på selve komponenten for å definere typen somm p
 ### 3.2
 Fortsett med å endre `Lectures.jsx` til å bruke TypeScript. Om dere holder over arrayet ser dere kanskje at typen infereres? Prøv å legg til et tall i lista å se hva typen er nå. Prøv så å sette typen på lista, og se om det kommer noen feilmeldinger. Prøv også å legge ved type i selve map-funksjonen.
 
+### Gjøre noe med data.ts?
+
 ## Oppgave 4: Iterere over en liste
 I denne oppgaven skal vi iterere over en liste og legge til et listepunkt for
 hvert element i listen. I React bruker vi en metode som heter `map` for å iterere over en liste med verdier. Hvordan du bruker `map` kan du se her: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
@@ -101,12 +103,12 @@ Kommenter inn state-hooken i toppen av Assignments-komponenten.
 const [activeTab, setActiveTab] = React.useState(0);
 ```
 
-Legg til en `onClick`-handler på fagknappen som oppdaterer staten `activeTab` med riktig fagindeks når du trykker på knappen.
+Legg til en `onClick`-handler på fagknappen som oppdaterer staten `activeTab` med riktig fagindeks når du trykker på knappen, slik at det er riktig tab som ligger i staten. Bruk console.log for å se at det er riktig tab som er satt, da det ikke er noe visuelt som blir endret i denne.
 
 HINT: Fyll inn updateActiveTab-metoden
 HINT: Hvordan kalle metoden når man klikker?
 
-### 5.3
+### 5.2
 Nå er det vanskelig å se hvilken tab som er aktiv. Legg til en klasse `activeTab` på `<button>`-elementet om indeksen til taben er lik som `activeTab`-staten slik at det blir lettere å se.
 
 ### 5.3
@@ -116,7 +118,10 @@ Nå vises lista med oppgaver til det første faget hele tiden. Bruk `activeTab`-
 For å se hvilke øvninger som er godkjent kan du legge til klassen `approvedAssignment` for de fagene som godkjent.
 
 ### 5.5
-SKAL VI HA EN OPPGAVE HER FOR Å LEGGE TIL STATUSMELDINGEN FOR OM ET HELT FAG ER GODKJENT ELLER IKKE?
+Vi kan også legge til en statusmeldinng for om alle fagene er godkjent eller ikke. Implementer isSubjectApproved-metoden, og kommenter inn den relevante koden i return-metoden.
+
+### Ekstra oppgave?
+Legg til funksjonalitet for å markere øvinger som godkjent.
 
 ## Oppgave 6
 En Reactapp er en frontendapplikasjon som typisk viser data hentet fra et API. For å hente data skal vi bruke Fetch APIet som er innebygget moderne browsere. Du kan lese mer om Fetch APIet og hvordan det brukes her: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
@@ -142,7 +147,12 @@ Oppdater `askQuestion`-metoden til å kun oppdatere `input`- og `question` state
 Oppdater useEffecten din til å avhenge av `question`-staten og fetch et nytt svar hver gang `question` har endret seg.
 
 ## Ekstraoppgaver
-### Lag en ny widget helt fra bunnen av
-Her finner du en liste over åpne APIer. Kan du bruke et av dem til å lage en ny widget til dashboardet ditt?
 
-LISTE OVER APIER
+### Lag en ny widget helt fra bunnen av
+Her finner du en liste over åpne APIer: https://dev.to/mkrl/apis-you-didnt-know-you-needed-38c. Vi har brukt det øverste til oppgave 6, kan du bruke et av de andre til å lage en ny widget til dashboardet ditt?
+
+### Endre stil
+I index.css ligger stilene for dashboardet. Hvis du ikke er fornøyd med hvordan dashboardet ditt ser ut kan du endre farger eller lignende her.
+
+### Legg ut sida på GitHub Pages
+Hvis du ønsker å ha dashboardet ditt på internett så er GitHub pages en enkel løsning for å til dette. Opprett et eget repository og push koden din til dette, for så å legge det ut via GitHub Pages.

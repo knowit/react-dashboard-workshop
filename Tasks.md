@@ -119,22 +119,27 @@ For å se hvilke øvninger som er godkjent kan du legge til klassen `approvedAss
 SKAL VI HA EN OPPGAVE HER FOR Å LEGGE TIL STATUSMELDINGEN FOR OM ET HELT FAG ER GODKJENT ELLER IKKE?
 
 ## Oppgave 6
-GÅ GJENNOM FETCHING AV DATA
+En Reactapp er en frontendapplikasjon som typisk viser data hentet fra et API. For å hente data skal vi bruke Fetch APIet som er innebygget moderne browsere. Du kan lese mer om Fetch APIet og hvordan det brukes her: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
 
 ### 6.1
 Legg widgeten `YesNo` til dashboardet ditt slik som du gjorde i oppgave 5.1.
 
 ### 6.2
-Oppdater `updateQuestion`-metoden til å oppdatere `question`-staten når du skriver noe i input feltet. ELLER KANSKJE DENNE METODEN SKAL VÆRE FERDIG IMPLEMENTERT SIDEN FOKUSET HER ER FETCHING? Kanskje vi kan at folk kan velge selv, fokuset er fetching, men for de som har lyst å prøve seg så kan de skrive metoden selv også?
+Oppdater `updateQuestion`-metoden til å oppdatere `question`-staten når du skriver noe i input feltet. Om du heller har lyst til å fokusere på fetching av data kan du kopiere inn metoden fra løsningsforslaget og hoppe til oppgave
+6.3.
 
 ### 6.3
-Noe med å submitte formet
+Når skjemaet med inputfeltet blir sendt inn trigges metoden `askQuestion`. Oppdater `askQuestion`-metoden til å fetche data fra APIet https://yesno.wtf/api. Bruk responsen til å oppdatere staten for `imageUrl`, `lastAskedQuestion` og resette `question`-staten.
 
 ### 6.4
-Fetche data fra api og oppdatere `imageUrl`-staten, `lastAskedQuestion` og resette `question`.
+Noen ganger vil du at noe skal skje som følge av noe annet. F.eks. kan det hende vi ønsker å hente et
+svar alt første gangen komponentet rendres så det ikke ser så tomt ut. I slike tilfeller kan vi bruke en metode som heter `useEffect`. Du kan lese mer om `useEffect` her: https://reactjs.org/docs/hooks-reference.html#useeffect
+
+Legg inn et default spørsmål i `question`-staten og hent et svar når komponenten rendres første gangen ved hjelp av `useEffect`.
 
 ### 6.5
-Legg inn et default spørsmål og hent et svar når komponenten rendres første gangen ved hjelp av `useEffect`.
+Oppdater `askQuestion`-metoden til å kun oppdatere `input`- og `question` staten når skjemaet sendes inn.
+Oppdater useEffecten din til å avhenge av `question`-staten og fetch et nytt svar hver gang `question` har endret seg.
 
 ## Ekstraoppgaver
 ### Lag en ny widget helt fra bunnen av

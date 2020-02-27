@@ -101,3 +101,45 @@ number - tall
     }
   </ul>
 ```
+
+# Oppgave 6
+
+## Fetch
+```javascript
+fetch('https://api_url.com')
+  .then(response => response.json())
+  .then(json => {
+    // Gjør noe med json responsen ved f.eks å legge den til å state
+    // og rendre informasjonen.
+  });
+```
+
+## useEffect
+```javascript
+// Denne useEffekten har ingen dependency array og vil
+// kjøres hver gang komponentet har rendret.
+React.useEffect(() => {
+  // Gjør noe hver gang komponentet har rendret.
+});
+```
+
+```javascript
+// Denne useEffekten har en tom dependency array og vil
+// kun kjøres første gangen komponentet har rendret.
+React.useEffect(() => {
+  // Gjør noe første gangen komponentet har rendret.
+}, []);
+```
+
+```javascript
+const [question, setQuestion] = React.useState('');
+
+// Denne useEffekten avhenger av question-staten og vil kun kjøres
+// om question har endret seg siden sist render.
+React.useEffect(() => {
+  // Gjør noe når question har endret seg.
+  // f.eks. ved å fetche et nytt svar fra apiet.
+}, [question]);
+
+<form onSubmit={() => setQuestion('Er jeg kul?')}>
+```

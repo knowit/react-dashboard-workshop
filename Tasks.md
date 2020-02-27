@@ -2,7 +2,7 @@
 
 Start appen med `yarn start`.
 
-Nedenfor ligger en beskrivelse av alle oppgavene vi skal gjennom for å lage vårt private dashboard. Hver oppgave er delt opp i flere deloppgaver. Målet er at alle, med hjelp, skal klare å løse den første deloppgaven for hver oppgave. I tillegg er det en noen deloppgaver med høyere nivå, begi deg ut på de om du får tid.
+Nedenfor ligger en beskrivelse av alle oppgavene vi skal gjennom for å lage vårt private dashboard. Hver oppgave er delt opp i flere deloppgaver, gjør så mange du rekker.
 
 En enkel måte å debugge appen din på er ved bruk av `console.log` for å printe ut hvilken data man har tilgjengelig. (https://developer.mozilla.org/en-US/docs/Web/API/Console).
 

@@ -11,7 +11,7 @@ const App = () => {
       </h1>
       <div className="dashboardRow">
         <Lectures />
-        <Assignments />
+        {/* <Assignments /> */}
       </div>
     </div>
   );

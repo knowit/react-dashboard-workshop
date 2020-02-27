@@ -6,10 +6,6 @@ const YesNo = () => {
   const [question, setQuestion] = React.useState('');
   const [imageUrl, setImageUrl] = React.useState();
 
-  React.useEffect(() => {
-    // Oppgave 6.5: Fetch data etter første render.
-  }, []);
-
   const updateInput = (evt: any) => {
     setInput(evt.target.value);
   }
@@ -25,6 +21,10 @@ const YesNo = () => {
     // Oppgave 6.3: Kall på fetchImage-metoden for å hente data
     // og oppdater lastAskedQueston- og question-staten.
   }
+
+  React.useEffect(() => {
+    // Oppgave 6.5: Fetch data etter første render.
+  }, []);
 
   return (
     <Widget title={question}>

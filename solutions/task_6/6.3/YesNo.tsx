@@ -6,10 +6,6 @@ const YesNo = () => {
   const [question, setQuestion] = React.useState('');
   const [imageUrl, setImageUrl] = React.useState();
 
-  React.useEffect(() => {
-    // Oppgave 6.5: Fetch data etter første render.
-  }, []);
-
   const updateInput = (evt: any) => {
     setInput(evt.target.value);
   }
@@ -24,9 +20,13 @@ const YesNo = () => {
     evt.preventDefault();
 
     fetchImage();
-    setQuestion(question);
+    setQuestion(input);
     setInput('');
   }
+
+  React.useEffect(() => {
+    // Oppgave 6.5: Fetch data etter første render.
+  }, []);
 
   return (
     <Widget title={question}>
@@ -45,7 +45,7 @@ const YesNo = () => {
         </label>
         <input
           id="yesOrNoQuestionInput"
-          value={question}
+          value={input}
           onChange={updateInput}
         />
       </form>

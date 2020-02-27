@@ -2,15 +2,11 @@ import React from 'react';
 import Widget from './Widget';
 
 const YesNo = () => {
+  const [input, setInput] = React.useState('');
   const [question, setQuestion] = React.useState('');
-  const [lastAskedQuestion, setLastAskedQuestion] = React.useState('');
   const [imageUrl, setImageUrl] = React.useState();
 
-  React.useEffect(() => {
-    // Oppgave 6.5: Fetch data etter første render.
-  }, []);
-
-  const updateQuestion = (evt: any) => {
+  const updateInput = (evt: any) => {
     // Oppgave 6.2: Oppdater question staten med det som
     // blir skrevet inn i input feltet.
   }
@@ -27,14 +23,19 @@ const YesNo = () => {
     // og oppdater lastAskedQueston- og question-staten.
   }
 
+  React.useEffect(() => {
+    // Oppgave 6.5: Fetch data etter første render.
+  }, []);
+
   return (
-    <Widget title={lastAskedQuestion}>
+    <Widget title={question}>
       {
         imageUrl &&
         <img alt={'yes or no gif'} src={imageUrl} />
       }
       <form
         className="yesOrNoForm"
+        onSubmit={askQuestion}
       >
         <label
           htmlFor="yesOrNoQuestionInput"
@@ -43,8 +44,8 @@ const YesNo = () => {
         </label>
         <input
           id="yesOrNoQuestionInput"
-          value={question}
-          onChange={updateQuestion}
+          value={input}
+          onChange={updateInput}
         />
       </form>
     </Widget>

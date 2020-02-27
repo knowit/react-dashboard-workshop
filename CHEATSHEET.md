@@ -77,9 +77,12 @@ const MyComponent = ({ text, children }) => (
 # Oppgave 3
 
 ## Typer
-```javascript
+```
 React.FC<> - React Functional Component
 number - tall
+string - tekst
+string[] - array av typen string
+
 
 ```
 
@@ -105,7 +108,6 @@ number - tall
 # Oppgave 5
 
 ## Filter
-Man kan bruke filter for å få filtrert en liste.
 ```javascript
 const array = [1, 2, 3, 4];
 const higherThan2 = array.filter(number => number > 2);
@@ -113,6 +115,24 @@ const higherThan2 = array.filter(number => number > 2);
 // higherThan2 = [3,4]
 ```
 
+## State håndtering
+
+```javascript
+import React, { useState } from 'react';
+function Example() {
+  // Declare a new state variable, which we'll call "count"
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+```
 
 # Oppgave 6
 

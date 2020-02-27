@@ -19,7 +19,7 @@ const YesNo = () => {
     evt.preventDefault();
 
     // Oppgave 6.3: Kall på fetchImage-metoden for å hente data
-    // og oppdater lastAskedQueston- og question-staten.
+    // og oppdater question- og input-staten.
   }
 
   React.useEffect(() => {

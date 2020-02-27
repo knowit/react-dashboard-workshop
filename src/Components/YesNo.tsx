@@ -7,7 +7,7 @@ const YesNo = () => {
   const [imageUrl, setImageUrl] = React.useState();
 
   const updateInput = (evt: any) => {
-    // Oppgave 6.2: Oppdater question staten med det som
+    // Oppgave 6.2: Oppdater input staten med det som
     // blir skrevet inn i input feltet.
   }
 
@@ -20,7 +20,7 @@ const YesNo = () => {
     evt.preventDefault();
 
     // Oppgave 6.3: Kall på fetchImage-metoden for å hente data
-    // og oppdater lastAskedQueston- og question-staten.
+    // og oppdater question- og input-staten.
   }
 
   React.useEffect(() => {

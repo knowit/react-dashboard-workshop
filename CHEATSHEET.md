@@ -13,7 +13,7 @@
 <li> ... </li>	List Item (within ordered or unordered)
 ```
 
-# Oppgave 1
+# Oppgave 1: Enkel rendering
 
 ## Vise JS i JSX
 ```javascript
@@ -22,7 +22,9 @@ const js = "This is javascript"
 const jsx = <div> This is Html and {js} </div>
 ```
 
-## Iterasjon
+# Oppgave 2: Iterasjon
+
+## For og map
 ```javascript
 // En for-løkke er kanskje det dere er mest vant til, og det kan gjøres slik i JS:
 var array = [1, 2, 3, 4];
@@ -38,8 +40,24 @@ const arrayPlus1 = array.map(value => value+1)
 // arrayPlus1 = [2,3,4,5]
 ```
 
+## Map over listepunkter
+```javascript
+  const list = [
+    'item 1',
+    'item 2',
+    'item 3'
+  ];
 
-# Oppgave 2
+  <ul>
+    {
+      list.map((item, index) =>
+        <li key={index}>{item}</li>
+      )
+    }
+  </ul>
+```
+
+# Oppgave 3: Komponenter og props
 
 ## Sende med props til et component
 
@@ -74,7 +92,7 @@ const MyComponent = ({ text, children }) => (
   </div>
 );
 ```
-# Oppgave 3
+# Oppgave 4: Intro til TypeScript
 
 ## Typer
 ```
@@ -82,30 +100,9 @@ React.FC<> - React Functional Component
 number - tall
 string - tekst
 string[] - array av typen string
-
-
 ```
 
-# Oppgave 4
-
-## Map over listepunkter
-```javascript
-  const list = [
-    'item 1',
-    'item 2',
-    'item 3'
-  ];
-
-  <ul>
-    {
-      list.map((item, index) =>
-        <li key={index}>{item}</li>
-      )
-    }
-  </ul>
-```
-
-# Oppgave 5
+# Oppgave 5: State
 
 ## Filter
 ```javascript
@@ -134,7 +131,7 @@ function Example() {
 }
 ```
 
-# Oppgave 6
+# Oppgave 6: Fetching av data
 
 ## Fetch
 ```javascript
@@ -146,7 +143,7 @@ fetch('https://api_url.com')
   });
 ```
 
-## useEffect
+# Oppgave 7: useEffect
 ```javascript
 // Denne useEffekten har ingen dependency array og vil
 // kjøres hver gang komponentet har rendret.

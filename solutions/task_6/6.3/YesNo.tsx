@@ -25,7 +25,7 @@ const YesNo = () => {
   }
 
   React.useEffect(() => {
-    // Oppgave 6.5: Fetch data etter første render.
+    // Oppgave 7.1: Fetch data etter første render.
   }, []);
 
   return (

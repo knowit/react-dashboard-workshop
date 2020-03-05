@@ -74,7 +74,7 @@ Fortsett med å endre `Lectures.jsx` til å bruke TypeScript. Om dere holder ove
 
 ### Gjøre noe med data.ts?
 
-## Oppgave 5
+## Oppgave 5: State
 ### 5.1
 Kommenter inn state-hooken i toppen av Assignments-komponenten.
 

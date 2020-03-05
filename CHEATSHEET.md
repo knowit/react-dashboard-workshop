@@ -42,19 +42,25 @@ const arrayPlus1 = array.map(value => value+1)
 
 ## Map over listepunkter
 ```javascript
-  const list = [
-    'item 1',
-    'item 2',
-    'item 3'
-  ];
+const list = [
+  'item 1',
+  'item 2',
+  'item 3'
+];
 
-  <ul>
-    {
-      list.map((item, index) =>
-        <li key={index}>{item}</li>
-      )
-    }
-  </ul>
+<ul>
+  {
+    list.map((item, index) =>
+      <li key={index}>{item}</li>
+    )
+  }
+</ul>
+
+// <ul>
+//   <li>item 1</li>
+//   <li>item 2</li>
+//   <li>item 3</li>
+// </ul>
 ```
 
 # Oppgave 3: Komponenter og props
@@ -80,6 +86,11 @@ const MyComponent = (props) => (
   {/* Alt som kommer mellom åpne- og lukketaggene til MyComponent vil bli samlet i et prop som heter children. Du får tilgang til proppet children på samme måte som andre props du sender til MyComponent. */}
   <p>Her er noe mer som skal rendres av MyComponent</p>
 </MyComponent>
+
+// <div>
+//   <p>Dette er litt tekst</p>
+//   <p>Her er noe mer som skal rendres av MyComponent</p>
+// </div>
 ```
 
 ## Destrukturering av props

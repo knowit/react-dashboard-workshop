@@ -74,7 +74,9 @@ Fortsett med å endre `Lectures.jsx` til å bruke TypeScript. Om dere holder ove
 
 ## Oppgave 5: State
 ### 5.1
-Kommenter inn state-hooken i toppen av Assignments-komponenten.
+Når vi nå skal jobbe med state skal vi koble inn en ny widget. Åpne først App.tsx-fila og kommenter inn Assignments-komponenten slik at du får opp en ny widget i dashboardet. 
+
+Når du har fått op den nye komponenten kan du åpne Assignments.tsx, der koden for denne ligger. Kommenter inn state-hooken i toppen av Assignments-komponenten.
 
 ```javascript
 const [activeTab, setActiveTab] = React.useState(0);

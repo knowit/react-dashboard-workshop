@@ -20,7 +20,13 @@ const Assignments = () => {
   return (
     <Widget title="Mine øvinger">
       <div className="tabs">
-        {/* Oppgave 4.2: Map over subjekts og print ut en knapp for hvert fag */}
+        {
+          subjects.map((subject: any, index: number) => (
+            <button key={index}>
+              {subject.name}
+            </button>
+          ))
+        }
       </div>
       <div className="subjectStatus">
         {/* {
@@ -28,13 +34,16 @@ const Assignments = () => {
         } */}
       </div>
       <ul>
-        {/*
-            Oppgave 4.3: Map over øvningene til det første faget og print ut et
-            listepunkt for hvert assignment for et fag
-          */}
+        {
+          subjects[0].assignments.map((assignment: any, index: number) => (
+            <li key={index}>
+              {assignment.name}
+            </li>
+          ))
+        }
       </ul>
     </Widget>
   );
 }
 
-export default(Assignments);
+export default (Assignments);

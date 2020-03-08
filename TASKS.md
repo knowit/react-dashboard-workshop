@@ -88,16 +88,16 @@ Det ligger noen knapper med navn på fagene i koden. Legg til en `onClick`-handl
 **Hint:** Hvordan kalle metoden når man klikker på en knapp?
 
 ### 5.2
-Nå er det vanskelig å se hvilken tab som er aktiv. Legg til en klasse `activeTab` på `<button>`-elementet om indeksen til taben er lik som `activeTab`-staten slik at det blir lettere å se.
+Nå er det vanskelig å se hvilken tab som er aktiv. Legg til et klassenavn `activeTab` på `<button>`-elementet om indeksen til taben er lik som `activeTab`-staten slik at det blir lettere å se.
 
 ### 5.3
 Nå vises lista med oppgaver til det første faget hele tiden. Bruk `activeTab`-staten til å vise riktig fag. Ser du at listen over øvinger endrer seg når du endrer fag?
 
 ### 5.4
-For å se hvilke øvninger som er godkjent kan du legge til klassen `approvedAssignment` for de fagene som godkjent.
+Hvis du åpner data.ts kan du se hvilken informasjon som ligger på fagene og øvinngene. Hvis du ser på hver enkelt øving så har de et felt som heter approved. Bruk dette feltet til å legge på klassenavnet `approvedAssignment` for øvingene i lista som er godkjent. De godkjente øvingene skal da ende opp med strikethrough.
 
 ### 5.5
-Vi kan også legge til en statusmeldinng for om alle fagene er godkjent eller ikke. Implementer isSubjectApproved-metoden, og kommenter inn den relevante koden i return-metoden.
+I data.ts kan du også se at på hvert fag så ligger det et felt som heter `mandatoryApprovals`. Denne sier noe om hvor mange av øvingene som trenger å være godkjent for at man kan få gå opp til eksamen. Implementer isSubjectApproved-metoden der du sjekker om man har nok godkjente øvinger, og returner true/false. Kommenter inn koden som kaller på isSubjestApproved-metoden, da vil du få opp en tekst som sier "Du er ferdig!" eller "Du er ikke helt i mål enda..." avhengig av om man har nok øvinger godkjent.
 
 ### Ekstra oppgave?
 Legg til funksjonalitet for å markere øvinger som godkjent.

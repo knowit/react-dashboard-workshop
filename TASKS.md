@@ -72,8 +72,6 @@ Vi starter med `Widget.jsx`. Prøv å endre filnavnet til `Widget.tsx`. Hvilke f
 ### 4.2
 Fortsett med å endre `Lectures.jsx` til å bruke TypeScript. Om dere holder over arrayet ser dere kanskje at typen infereres? Prøv å legg til et tall i lista å se hva typen er nå. Prøv så å sette typen på lista, og se om det kommer noen feilmeldinger. Prøv også å legge ved type i selve map-funksjonen.
 
-### Gjøre noe med data.ts?
-
 ## Oppgave 5: State
 ### 5.1
 Kommenter inn state-hooken i toppen av Assignments-komponenten.

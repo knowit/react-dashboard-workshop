@@ -47,9 +47,9 @@ Children er et slags spesialprop. Alt som er definert mellom åpne og lukketagge
 ### 3.1
 Åpne `Widget.tsx`, og sammenlign den med Lectures-komponenten vi nettopp var i. Du ser kanskje at de er ganske like?
 
-I `Lectures.jsx`, fjern de taggene som er like i filene og erstatt med `<Widget>`.
+Prøv å skrive om `Lectures.jsx` slik at du gjennbruker `<Widget>`. Dette kan du gjøre ved å erstatte de html taggene i `Lectures.jsx` som like i begge filene og erstatte de med `<Widget>` taggen.
 
-**Hint:** Det er gjort i `assignments.tsx`.
+**Hint:** Det er gjort i `Assignments.tsx`.
 
 ### 3.2
 Nå får du kanskje opp at ingen tittel er definert?
@@ -74,7 +74,7 @@ Fortsett med å endre `Lectures.jsx` til å bruke TypeScript. Om dere holder ove
 
 ## Oppgave 5: State
 ### 5.1
-Når vi nå skal jobbe med state skal vi koble inn en ny widget. Åpne først App.tsx-fila og kommenter inn Assignments-komponenten slik at du får opp en ny widget i dashboardet. 
+Når vi nå skal jobbe med state skal vi koble inn en ny widget. Åpne først App.tsx-fila og kommenter inn Assignments-komponenten slik at du får opp en ny widget i dashboardet.
 
 Når du har fått opp den nye komponenten kan du åpne Assignments.tsx, der koden for denne ligger. Kommenter inn state-hooken i toppen av Assignments-komponenten.
 

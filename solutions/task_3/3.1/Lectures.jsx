@@ -5,9 +5,11 @@ import Widget from '../Components/Widget';
 const Lectures = () => (
   <Widget>
     <ul>
-      <li>08:00-09:00 It Grunnkurs</li>
-      <li>08:00-09:00 It Grunnkurs</li>
-      <li>08:00-09:00 It Grunnkurs</li>
+      {
+        lectures.map(lecture =>
+          <li key={lecture}>{lecture}</li>
+        )
+      }
     </ul>
   </Widget>
 );

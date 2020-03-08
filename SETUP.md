@@ -31,7 +31,7 @@ Last ned Git for Windows her: https://gitforwindows.org/
 ###  Klone repo
 Klone repo fra GitHub: https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository
 
-`git clone git@github.com:knowit/react-dashboard-workshop.git`
+`git clone https://github.com/knowit/react-dashboard-workshop.git`
 
 ## Installere avhengigheter
 Naviger til prosjektmappen `react-dashboard-workshop` i terminalen og kjør kommandoen `yarn`.

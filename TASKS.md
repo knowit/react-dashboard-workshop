@@ -76,16 +76,16 @@ Fortsett med å endre `Lectures.jsx` til å bruke TypeScript. Om dere holder ove
 ### 5.1
 Når vi nå skal jobbe med state skal vi koble inn en ny widget. Åpne først App.tsx-fila og kommenter inn Assignments-komponenten slik at du får opp en ny widget i dashboardet. 
 
-Når du har fått op den nye komponenten kan du åpne Assignments.tsx, der koden for denne ligger. Kommenter inn state-hooken i toppen av Assignments-komponenten.
+Når du har fått opp den nye komponenten kan du åpne Assignments.tsx, der koden for denne ligger. Kommenter inn state-hooken i toppen av Assignments-komponenten.
 
 ```javascript
 const [activeTab, setActiveTab] = React.useState(0);
 ```
 
-Legg til en `onClick`-handler på fagknappen som oppdaterer staten `activeTab` med riktig fagindeks når du trykker på knappen, slik at det er riktig tab som ligger i staten. Bruk console.log for å se at det er riktig tab som er satt, da det ikke er noe visuelt som blir endret i denne.
+Det ligger noen knapper med navn på fagene i koden. Legg til en `onClick`-handler på fagknappen som kaller på riktig metode. Oppdaterer staten `activeTab` med riktig fagindeks når du trykker på knappen, slik at det er riktig tab som ligger i staten. Bruk console.log for å se at det er riktig tab som er satt, da det ikke er noe visuelt som blir endret i denne.
 
 **Hint:** Fyll inn updateActiveTab-metoden
-**Hint:** Hvordan kalle metoden når man klikker?
+**Hint:** Hvordan kalle metoden når man klikker på en knapp?
 
 ### 5.2
 Nå er det vanskelig å se hvilken tab som er aktiv. Legg til en klasse `activeTab` på `<button>`-elementet om indeksen til taben er lik som `activeTab`-staten slik at det blir lettere å se.

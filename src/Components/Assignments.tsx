@@ -22,7 +22,7 @@ const Assignments = () => {
       <div className="tabs">
         {
           subjects.map((subject: any, index: number) => (
-            <button key={index}>
+            <button key={index}> {/* Her må det kanskje skje noe når man trykker på knappen? */}
               {subject.name}
             </button>
           ))
